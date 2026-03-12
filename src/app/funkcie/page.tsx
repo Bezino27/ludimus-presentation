@@ -14,7 +14,7 @@ const sections = [
     eyebrow: "Tréningy a dochádzka",
     title: "Prehľad tréningov a účasti hráčov bez chaosu",
     text: "Tréneri majú prehľad o plánovaných tréningoch, účasti hráčov a histórii dochádzky. Hráči vedia jednoducho potvrdiť svoju účasť a klub má všetko evidované na jednom mieste.",
-    image: "/mockups/treningy.png",
+    image: "/mockups/treningy.PNG",
     imageAlt: "Mockup Ludimus aplikácie – tréningy a dochádzka",
     reverse: false,
     bullets: [
@@ -27,7 +27,7 @@ const sections = [
     eyebrow: "Zápasy a nominácie",
     title: "Správa zápasov a nominácií priamo v aplikácii",
     text: "Ludimus umožňuje vytvárať zápasy, sledovať hlasovanie hráčov o účasti a zostavovať nominácie. Tréner má všetko prehľadne usporiadané a hráči okamžite vidia svoj status.",
-    image: "/mockups/zapasy.png",
+    image: "/mockups/zapasy.PNG",
     imageAlt: "Mockup Ludimus aplikácie – zápasy a nominácie",
     reverse: true,
     bullets: [
@@ -53,7 +53,7 @@ const sections = [
     eyebrow: "Komunikácia a notifikácie",
     title: "Dôležité informácie sa dostanú k správnym ľuďom",
     text: "Oznamy, správy a push notifikácie pomáhajú klubu komunikovať rýchlejšie a prehľadnejšie. Hráči, tréneri aj rodičia majú informácie vždy poruke v mobile.",
-    image: "/mockups/oznamy.png",
+    image: "/mockups/oznamy.PNG",
     imageAlt: "Mockup Ludimus aplikácie – komunikácia a notifikácie",
     reverse: true,
     bullets: [
