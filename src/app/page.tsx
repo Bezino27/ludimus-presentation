@@ -70,7 +70,7 @@ export default function HomePage() {
                   Vyskúšať Ludimus
                 </Link>
 
-                <a href="https://ludimus.sk/login" className={styles.secondaryBtn}>
+                <a href="https://app.ludimus.sk/login" className={styles.secondaryBtn}>
                   Prihlásiť sa do aplikácie
                 </a>
               </div>

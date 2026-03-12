@@ -30,7 +30,7 @@ export default function Footer() {
 
             <div className={styles.contactList}>
               <a href="mailto:support@ludimus.sk">support@ludimus.sk</a>
-              <a href="https://ludimus.sk/login">Prihlásenie do aplikácie</a>
+              <a href="https://app.ludimus.sk/login">Prihlásenie do aplikácie</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
               <Link href="/funkcie">Pre trénerov</Link>
               <Link href="/funkcie">Pre adminov</Link>
               <Link href="/funkcie">Pre hráčov</Link>
-              <a href="https://ludimus.sk/login">Aplikácia</a>
+              <a href="https://app.ludimus.sk/login">Aplikácia</a>
             </div>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
               <Link href="/kontakt" className={styles.primaryBtn}>
                 Dohodnúť prezentáciu
               </Link>
-              <a href="https://ludimus.sk/login" className={styles.secondaryBtn}>
+              <a href="https://app.ludimus.sk/login" className={styles.secondaryBtn}>
                 Prihlásiť sa
               </a>
             </div>

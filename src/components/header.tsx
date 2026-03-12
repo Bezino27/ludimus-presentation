@@ -20,7 +20,7 @@ export default function Header() {
 
           <div className={styles.topRight}>
             <a href="mailto:info@ludimus.sk">support@ludimus.sk</a>
-            <a href="https://ludimus.sk/login">Prihlásenie</a>
+            <a href="https://app.ludimus.sk/login">Prihlásenie</a>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function Header() {
           </nav>
 
           <div className={styles.actions}>
-            <a href="https://ludimus.sk/login" className={styles.loginBtn}>
+            <a href="https://app.ludimus.sk/login" className={styles.loginBtn}>
               Prihlásiť sa
             </a>
 
@@ -100,7 +100,7 @@ export default function Header() {
 
           <div className={styles.mobileActions}>
             <a
-              href="https://ludimus.sk/login"
+              href="https://app.ludimus.sk/login"
               className={styles.mobileLoginBtn}
               onClick={closeMenu}
             >
