@@ -392,6 +392,15 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1400px) {
+  .page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.14), transparent 30%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 900px, #ffffff 900px, #ffffff 100%);
+  min-height: 100vh;
+}
+}
+
 @media (max-width: 1100px) {
   .heroInner,
   .twoCol,
@@ -416,6 +425,12 @@
   .statCard {
   display: none;
   }
+   .page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.14), transparent 30%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 1200px, #ffffff 1200px, #ffffff 100%);
+  min-height: 100vh;
+}
 }
 
 @media (max-width: 760px) {
@@ -452,4 +467,10 @@
     padding: 28px 22px;
     border-radius: 24px;
   }
+     .page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.14), transparent 30%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 1000px, #ffffff 1000px, #ffffff 100%);
+  min-height: 100vh;
+}
 }
