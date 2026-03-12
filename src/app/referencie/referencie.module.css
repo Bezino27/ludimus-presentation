@@ -1,0 +1,359 @@
+.page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.1), transparent 22%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 500px, #f7f7f8 500px, #ffffff 100%);
+  min-height: 100vh;
+  color: #111;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 72px 20px 70px;
+}
+
+.heroInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.badge,
+.sectionEyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.badge {
+  margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ff8c8c;
+}
+
+.sectionEyebrow {
+  margin-bottom: 14px;
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.08);
+}
+
+.heroInner h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: 1.04;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 22px auto 0;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.statsSection,
+.reviewsSection,
+.logoSection {
+  padding: 54px 0 20px;
+}
+
+.ctaSection {
+  padding: 34px 0 90px;
+}
+
+.sectionHeading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.sectionHeading h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.12;
+}
+
+.sectionHeading p {
+  margin: 0;
+  color: #5a5a5a;
+  line-height: 1.75;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.statCard {
+  padding: 30px;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+  text-align: center;
+}
+
+.statCard strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  font-weight: 900;
+  color: #d32f2f;
+}
+
+.statCard span {
+  color: #555;
+  font-size: 1rem;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.reviewCard {
+  position: relative;
+  padding: 30px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafb 100%);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+}
+
+.quoteMark {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(211, 47, 47, 0.14);
+  font-weight: 900;
+}
+
+.reviewText {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 22px;
+  color: #333;
+  line-height: 1.85;
+}
+
+.reviewFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewFooter strong {
+  color: #111;
+  font-size: 1rem;
+}
+
+.reviewFooter span {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.logoBox {
+  padding: 34px;
+  border-radius: 30px;
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+}
+
+.logoBox h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.logoBox p {
+  margin: 0;
+  max-width: 760px;
+  color: #5a5a5a;
+  line-height: 1.75;
+}
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.logoPlaceholder {
+  min-height: 110px;
+  border-radius: 22px;
+  border: 1px dashed rgba(17, 17, 17, 0.14);
+  background: linear-gradient(180deg, #fbfbfc 0%, #f1f1f4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 700;
+}
+
+.ctaBox {
+  text-align: center;
+  padding: 44px 26px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #111 0%, #1e1e24 100%);
+  color: #fff;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.16);
+}
+
+.ctaBox h2 {
+  max-width: 820px;
+  margin: 0 auto 14px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.14;
+}
+
+.ctaBox p {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #d32f2f 0%, #ff5757 100%);
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(211, 47, 47, 0.24);
+}
+
+.secondaryBtn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  transform: translateY(-2px);
+}
+
+.logoItem {
+  height: 110px;
+  border-radius: 22px;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logoItem img {
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: contain;
+}
+.logoItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+
+@media (max-width: 900px) {
+  .logoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.1), transparent 22%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 460px, #f7f7f8 460px, #ffffff 100%);
+  min-height: 100vh;
+  color: #111;
+}
+}
+
+@media (max-width: 500px) {
+  .logoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 980px) {
+  .statsGrid,
+  .reviewsGrid,
+  .logoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 54px 16px 52px;
+  }
+
+  .heroInner h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .lead {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .ctaActions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .statCard,
+  .reviewCard,
+  .logoBox,
+  .ctaBox {
+    padding: 22px;
+    border-radius: 22px;
+  }
+}

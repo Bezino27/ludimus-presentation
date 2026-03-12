@@ -1,0 +1,490 @@
+.page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.08), transparent 22%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 460px, #f6f6f7 460px, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 80px 20px 70px;
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: #ff8e8e;
+}
+
+.sectionEyebrow {
+  color: #d32f2f;
+}
+
+.heroInner h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1.02;
+  font-weight: 900;
+}
+
+.heroInner p {
+  max-width: 780px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.06rem;
+  line-height: 1.8;
+}
+
+.sections {
+  padding: 0 20px 100px;
+}
+
+.sectionsInner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  gap: 34px;
+}
+
+.featureSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+  align-items: center;
+  border-radius: 34px;
+  padding: 38px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.07);
+}
+
+.featureDark {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.14), transparent 30%),
+    linear-gradient(135deg, #0f1013 0%, #191a20 100%);
+  color: #fff;
+}
+
+.featureLight {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  color: #111;
+}
+
+.featureSectionReverse .textCol {
+  order: 2;
+}
+
+.featureSectionReverse .imageCol {
+  order: 1;
+}
+
+.textCol {
+  min-width: 0;
+}
+
+.textCol h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1.08;
+  max-width: 620px;
+}
+
+.featureDark .textCol h2 {
+  color: #fff;
+}
+
+.featureLight .textCol h2 {
+  color: #111;
+}
+
+.textCol p {
+  margin: 0 0 24px;
+  font-size: 1.03rem;
+  line-height: 1.85;
+  max-width: 620px;
+}
+
+.featureDark .textCol p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.featureLight .textCol p {
+  color: #555;
+}
+
+.bulletList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.featureDark .bulletList li {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.featureLight .bulletList li {
+  color: #333;
+}
+
+.bulletList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d32f2f 0%, #ff6b6b 100%);
+  box-shadow: 0 0 0 6px rgba(211, 47, 47, 0.1);
+}
+
+.imageCol {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.visualWrap {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureDark .glow {
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(211, 47, 47, 0.2) 0%,
+    rgba(211, 47, 47, 0.05) 42%,
+    transparent 72%
+  );
+  filter: blur(12px);
+}
+
+.featureLight .glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(211, 47, 47, 0.08) 0%,
+    rgba(211, 47, 47, 0.02) 42%,
+    transparent 72%
+  );
+  filter: blur(10px);
+}
+
+.phoneShell {
+  position: relative;
+  width: 390px;
+  height: 780px;
+  border-radius: 46px;
+  padding: 14px;
+  box-shadow:
+    0 34px 84px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  z-index: 2;
+}
+
+.featureDark .phoneShell {
+  background: linear-gradient(180deg, #080809 0%, #17181d 100%);
+}
+
+.featureLight .phoneShell {
+  background: linear-gradient(180deg, #14161a 0%, #22252b 100%);
+}
+
+.phoneNotch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 30px;
+  border-radius: 0 0 18px 18px;
+  z-index: 3;
+}
+
+.featureDark .phoneNotch {
+  background: #080809;
+}
+
+.featureLight .phoneNotch {
+  background: #14161a;
+}
+
+.phoneFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mockupImage {
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
+.floatingCardTop,
+.floatingCardBottom {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  max-width: 230px;
+  z-index: 4;
+}
+
+.floatingCardTop strong,
+.floatingCardBottom strong {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: inherit;
+}
+
+.floatingCardTop span,
+.floatingCardBottom span {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: inherit;
+  opacity: 0.88;
+}
+
+.featureDark .floatingCardTop,
+.featureDark .floatingCardBottom {
+  background: rgba(22, 22, 28, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.featureLight .floatingCardTop,
+.featureLight .floatingCardBottom {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  color: #111111;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+}
+
+.floatingCardTop {
+  top: 72px;
+  right: -6px;
+}
+
+.floatingCardBottom {
+  bottom: 72px;
+  left: -6px;
+}
+
+.ctaSection {
+  padding: 0 20px 100px;
+}
+
+.ctaCard {
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 34px;
+  padding: 42px;
+  background: linear-gradient(135deg, #111 0%, #18181b 100%);
+  color: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.14);
+}
+
+.ctaCard h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.ctaCard p {
+  margin: 0 0 24px;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.8;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 16px 34px rgba(211, 47, 47, 0.22);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(211, 47, 47, 0.28);
+}
+
+@media (max-width: 1100px) {
+  .featureSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .featureSectionReverse .textCol,
+  .featureSectionReverse .imageCol {
+    order: initial;
+  }
+
+  .visualWrap {
+    min-height: 560px;
+  }
+
+  .phoneShell {
+    width: 340px;
+    height: 680px;
+  }
+
+  .floatingCardTop {
+    right: 10px;
+  }
+
+  .floatingCardBottom {
+    left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 60px 16px 56px;
+  }
+
+  .heroInner p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .sections,
+  .ctaSection {
+    padding: 0 16px 72px;
+  }
+
+  .featureSection,
+  .ctaCard {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .textCol h2 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .textCol p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .bulletList {
+    gap: 10px;
+  }
+
+  .bulletList li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .visualWrap {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .glow {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .phoneShell {
+    width: min(100%, 280px);
+    height: 560px;
+    border-radius: 34px;
+    padding: 10px;
+  }
+
+  .phoneNotch {
+    width: 96px;
+    height: 18px;
+  }
+
+  .phoneFrame {
+    border-radius: 24px;
+  }
+
+  .floatingCardTop,
+  .floatingCardBottom {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 16px;
+    padding: 14px 16px;
+  }
+
+  .featureDark .floatingCardTop,
+  .featureDark .floatingCardBottom {
+    background: rgba(20, 20, 26, 0.92);
+  }
+
+  .featureLight .floatingCardTop,
+  .featureLight .floatingCardBottom {
+    background: #f8f8f9;
+  }
+
+  .ctaCard h2 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .ctaCard p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}

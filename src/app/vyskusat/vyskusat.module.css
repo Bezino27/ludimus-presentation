@@ -1,0 +1,319 @@
+.page {
+  background:
+    radial-gradient(circle at top right, rgba(211, 47, 47, 0.1), transparent 22%),
+    linear-gradient(180deg, #0b0b0d 0px, #121216 670px, #f7f7f8 670px, #ffffff 100%);
+  min-height: 100vh;
+  color: #111;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 60px 20px 48px;
+}
+
+.heroInner {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.badge,
+.sectionEyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.badge {
+  margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ff8c8c;
+}
+
+.sectionEyebrow {
+  margin-bottom: 14px;
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.08);
+}
+
+.heroInner h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  line-height: 1.04;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  max-width: 780px;
+  margin: 20px auto 0;
+  font-size: 1.04rem;
+  line-height: 1.78;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.heroActions,
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.primaryBtn,
+.secondaryBtn,
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryBtn,
+.submitBtn {
+  background: linear-gradient(135deg, #d32f2f 0%, #ff5757 100%);
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(211, 47, 47, 0.24);
+  border: none;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover,
+.submitBtn:hover {
+  transform: translateY(-2px);
+}
+
+.benefitsSection,
+.includedSection,
+.transitionSection,
+.formSection {
+  padding: 34px 0 16px;
+}
+
+.ctaSection {
+  padding: 28px 0 90px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.benefitCard {
+  padding: 30px;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+}
+
+.benefitCard h3 {
+  margin: 0 0 12px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: #111;
+}
+
+.benefitCard p {
+  margin: 0;
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+.includedCard,
+.formWrap {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 24px;
+  align-items: start;
+  padding: 34px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+}
+
+.includedText h2,
+.transitionBox h2,
+.formText h2,
+.ctaBox h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.12;
+}
+
+.includedText p,
+.transitionBox p,
+.formText p,
+.ctaBox p {
+  margin: 0;
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+.featureList {
+  margin: 0;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.95;
+  font-size: 1rem;
+}
+
+.transitionBox {
+  padding: 34px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafb 100%);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 18px 50px rgba(18, 18, 24, 0.06);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: #111;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(211, 47, 47, 0.45);
+  box-shadow: 0 0 0 4px rgba(211, 47, 47, 0.08);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.formNote {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.ctaBox {
+  text-align: center;
+  padding: 44px 26px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #111 0%, #1e1e24 100%);
+  color: #fff;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.16);
+}
+
+.ctaBox p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 980px) {
+  .cardsGrid,
+  .includedCard,
+  .formWrap,
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 46px 16px 34px;
+  }
+
+  .heroInner h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .lead {
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .heroActions,
+  .ctaActions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 340px;
+    margin: 24px auto 0;
+  }
+
+  .primaryBtn,
+  .secondaryBtn,
+  .submitBtn {
+    width: 100%;
+  }
+
+  .benefitCard,
+  .includedCard,
+  .formWrap,
+  .transitionBox,
+  .ctaBox {
+    padding: 22px;
+    border-radius: 22px;
+  }
+}
