@@ -15,7 +15,7 @@ export default function Header() {
       <div className={styles.topBar}>
         <div className={styles.topInner}>
           <div className={styles.topLeft}>
-            <span>Moderný informačný systém pre športové kluby</span>
+            <span>We create. We Move. We play.</span>
           </div>
 
           <div className={styles.topRight}>
@@ -38,7 +38,16 @@ export default function Header() {
                 priority
               />
               <div className={styles.logoText}>
-                <span className={styles.logoTitle}>LUDIMUS</span>
+                <span className={styles.logoTitle}>
+                  <Image
+                    src="/logo/ludimus_font.png"
+                    alt="Ludimus logo"
+                    width={60}
+                    height={30}
+                    className={styles.logoTitleImage}
+                    priority
+                  />
+                </span>
                 <span className={styles.logoSubtitle}>SPORT CLUB SYSTEM</span>
               </div>
             </div>

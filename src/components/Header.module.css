@@ -12,14 +12,7 @@
 }
 
 .topInner {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  min-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+display: none;
 }
 
 .topLeft {
@@ -70,6 +63,16 @@
   min-width: fit-content;
 }
 
+.logoTitleImage {
+  width: 150px;
+  transition: filter 0.25s ease;
+}
+
+/* hover nad celým logom */
+.logo:hover .logoTitleImage {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(96%) saturate(2176%)
+    hue-rotate(347deg) brightness(88%) contrast(98%);
+}
 .logo:hover .logoTitle {
   color: #ff5a5a;
 }
@@ -82,7 +85,7 @@
 }
 
 .logoImage {
-  height: 52px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -299,7 +302,7 @@
   }
 
   .mobileMenuOpen {
-    max-height: 420px;
+    max-height: 540px;
     opacity: 1;
     padding-bottom: 18px;
   }
