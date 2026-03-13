@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/header";
 import styles from "./page.module.css";
 import Footer from "@/components/footer";
+import HeroOrbit from "@/components/HeroOrbit";
 
 export const metadata = {
   title: "Ludimus | Moderný informačný systém pre športové kluby",
@@ -91,21 +92,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className={styles.heroVisual}>
-              <div className={styles.heroImageCard}>
-                <Image
-                  src="/images/hero-club.webp"
-                  alt="Športový klub a digitálne riadenie tréningov"
-                  fill
-                  className={styles.heroImage}
-                  priority
-                />
-                <div className={styles.heroOverlay} />
-                <div className={styles.heroMiniCard}>
-                  <strong>Dochádzka, zápasy, nominácie a platby v jednom systéme</strong>
-                </div>
-              </div>
-            </div>
+<div className={styles.heroVisual}>
+  <HeroOrbit />
+</div>
           </div>
         </section>
 
