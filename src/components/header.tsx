@@ -38,17 +38,24 @@ export default function Header() {
                 priority
               />
               <div className={styles.logoText}>
-                <span className={styles.logoTitle}>
-                  <Image
-                    src="/logo/ludimus_font.png"
-                    alt="Ludimus logo"
-                    width={60}
-                    height={30}
-                    className={styles.logoTitleImage}
-                    priority
-                  />
-                </span>
-                <span className={styles.logoSubtitle}>SPORT CLUB SYSTEM</span>
+                  <span className={styles.logoTitleWrap}>
+                    <Image
+                      src="/logo/ludimus_font_white.svg"
+                      alt="Ludimus logo"
+                      width={150}
+                      height={60}
+                      className={styles.logoTitleImage}
+                      priority
+                    />
+                    <Image
+                      src="/logo/ludimus_font_red.svg"
+                      alt="Ludimus logo"
+                      width={150}
+                      height={60}
+                      className={styles.logoTitleImageHover}
+                      priority
+                    />
+                  </span>
               </div>
             </div>
           </Link>

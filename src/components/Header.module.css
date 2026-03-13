@@ -63,19 +63,7 @@ display: none;
   min-width: fit-content;
 }
 
-.logoTitleImage {
-  width: 150px;
-  transition: filter 0.25s ease;
-}
 
-/* hover nad celým logom */
-.logo:hover .logoTitleImage {
-  filter: brightness(0) saturate(100%) invert(24%) sepia(96%) saturate(2176%)
-    hue-rotate(347deg) brightness(88%) contrast(98%);
-}
-.logo:hover .logoTitle {
-  color: #ff5a5a;
-}
 
 .logoImageWrap {
   display: flex;
@@ -97,14 +85,40 @@ display: none;
   line-height: 1;
 }
 
-.logoTitle {
-  color: #ffffff;
-  font-size: 1.45rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  transition: color 0.2s ease;
+.logoTitleWrap {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 48px;
 }
 
+.logoTitleImage,
+.logoTitleImageHover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.logoTitleImage {
+  opacity: 1;
+}
+
+.logoTitleImageHover {
+  opacity: 0;
+}
+
+.logo:hover .logoTitleImage {
+  opacity: 0;
+  transform: translateY(-1px);
+}
+
+.logo:hover .logoTitleImageHover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
 .logoSubtitle {
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.62);
